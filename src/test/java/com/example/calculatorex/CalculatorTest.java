@@ -2,6 +2,7 @@ package com.example.calculatorex;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
@@ -9,7 +10,6 @@ class CalculatorTest {
 
     @BeforeEach
     void setUp() {
-
         calculator = new Calculator();
     }
 
@@ -59,10 +59,10 @@ class CalculatorTest {
 
     @Test
     void test_string_math_expression() {
-        assertEquals(50, calculator.mathExpression( "(10*5)"));
-        assertEquals(70, calculator.mathExpression( "20+(10*5)"));
-        assertEquals(33, calculator.mathExpression( "((3+2)*2+1)*3"));
-        assertEquals(38, calculator.mathExpression( "((3+2)*2+1)*3+5"));
+        assertEquals(50, calculator.mathExpression("(10*5)"));
+        assertEquals(70, calculator.mathExpression("20+(10*5)"));
+        assertEquals(33, calculator.mathExpression("((3+2)*2+1)*3"));
+        assertEquals(38, calculator.mathExpression("((3+2)*2+1)*3+5"));
         assertEquals(10, calculator.mathExpression("2+8"));
         assertEquals(16, calculator.mathExpression("2*8"));
         assertEquals(6, calculator.mathExpression("8-2"));
